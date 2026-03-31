@@ -1,11 +1,4 @@
-#include <input/processors.dtsi>
-
 &pointing_listener {
     status = "okay";
     device = <&pointing_device>;
-
-    scroller {
-        layers = <1>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
-    };
 };
